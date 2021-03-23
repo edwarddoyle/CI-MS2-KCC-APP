@@ -1,5 +1,8 @@
 ## Testing
 
+JavaScript function testing can be found in the [JavaScript Test Results Document](assets/docs/FunctionTests.pdf)
+As DRY functions are imported across the entire application - they are tested within the scope they are executed, ie. a noData() function is called when there is no data to display in events.js & reports.js. Testing of this function was carried out within these scopes and not where the function is declared
+
 >The following devices / browsers were used by me for testing. Friends & family used a variety of devices to view / test the site.
 >
 >* Desktop
@@ -90,7 +93,15 @@ UX & Navigation, Responsiveness, Accessibility, Scope / Goals and Validation.
 
 #### Report Section
 
-> to be added
+| Success Criteria | Method | Result | Device |  
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------ | ----------------- |
+| Report pop displays  | cta button clicked                                           | PASS   | Desktop &  Mobile |
+ | Browser requests location permission  | cta button clicked                                           | PASS   | Desktop &  Mobile |
+| Users location displayed on map                                         | Location permission granted to browser                                           | PASS   | Desktop &  Mobile |
+| Image button opens file browser on desktop & option of file browser or camera on mobile                                | image upload button clicked                                         | PASS   | Desktop &  Mobile |
+| Images display in slider                                         | Tested uploading from file system on both desktop & mobile. Live captured images from camera                 | PASS      | Desktop & Mobile                |
+| Report Sent to Admin              | Check email account & api dashboard                    | PASS   | Desktop &  Mobile |
+| Previous Reports should be displayed or no reports image if no reports posted previously            | No reports image shows on initial navigation to the page. Post a report                    | PASS   | Desktop &  Mobile |
 
 #### Contact Section
 
