@@ -1,4 +1,4 @@
-# ![logo](assets/docs/logo.png) Kilmacow Community Clean-up
+# ![logo](assets/docs/logo.png) KCC App
 
 [View the live project here.](https://edwarddoyle.github.io/CI-MS2-KCC-APP/)
 
@@ -29,6 +29,7 @@ Windows / Linux : &nbsp; ![ctrl](assets/docs/ctrl.png)  &nbsp; + &nbsp; 'click'
     * [Typography](<#typography>)
     * [Images](<#images>)
 * [Features](<#features>)
+* [Testing](<#testing>)
 * [Technologies Used](<#technologies>)
 * [Deployment](<#deployment>)
   * [Creation](<#creation>)
@@ -122,5 +123,20 @@ The application aims to look and feel like a native application. The app is desi
 >* [Report Section](assets/docs/Reports.pdf)
 >* [Events Section](assets/docs/Events.pdf)
 >* [Contact Section](assets/docs/Contact.pdf)
+
+[Back to Top](<#table-of-contents>)
+
+### Surface
+
+[Back to Top](<#table-of-contents>)
+
+## Features
+
+[Back to Top](<#table-of-contents>)
+
+## Testing
+
+> Due to the large file size, the testing section is available in it's own file 
+>* [Testing](testing.md)
 
 [Back to Top](<#table-of-contents>)
