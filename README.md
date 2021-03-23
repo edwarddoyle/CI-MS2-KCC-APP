@@ -105,12 +105,20 @@ The application aims to look and feel like a native application. The app is desi
 
 #### Home: 
 
+The home section of the app contains contact details for the Kilmacow Community Clean Up Group. Upon navigating to the app this is the section the user is first presented with. A greeting message slides down and welcomes the user to the page. If at a future point in time the user fills out any of the forms on the app, their name is captures, stored in local storage and is used to personalise this greeting in the future, i.e. Good Morning Edward, Good Evening Edward etc!
+The home section also contains some text welcoming the user and explaining to them that the app is still in a testing phase and ask them to provide feedback to help develop the app further. A notice about location permissions is also included to prepare the user for the report form, the browser will request location permissions. It is proposed that as the app develops further this section will act like a news feed, similar to that on social media sites, providing the user with updates about upcoming events and content from the groups social media pages.
+
 #### Reports: 
+
+The reports section of the app shows an image letting the user know there is no reports to show. Once the user clicks the call-to-action button they will be asked for their location. The pop-up form includes an input field for a brief description of the report, allows them to capture images from their device or upload images, displays the images in a slider and once submitted, the report is emailed to the group and stored in local storage of the user’s device. Upon returning to the page after posting reports, the user will see cards showing their previous reports.
 
 #### Events:
 
+The Events section will contain cards, initially outlining overview information about upcoming events, such as meeting location, time and invitees. The overview cards can be expanded to display more in-depth information. These event cards are featured on the KCC website and the client requested that they be included in the app also. These will be updated live when the app is connected to a database.
+
 #### Contact: 
 
+The Contact section contains a form for contacting the KCC. The form will allow visitors include their name and email address; a text area will provide a method for visitors to include a personalised message. The contact section also includes a link to a feedback form that we ask users to fill out rating different aspects of the app. This will determine any future features that the app will include and any changes the users would like to see. The contact section also includes the contact details for the KCC, such as website address, email address, postal address and contact number. 
 
 [Back to Top](<#table-of-contents>)
 
