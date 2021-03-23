@@ -128,6 +128,31 @@ The application aims to look and feel like a native application. The app is desi
 
 ### Surface
 
+The web app uses the same typography and logo that are featured on the clients existing website. To give the app a more "native" feel a selection of familiar colours to poular apps were chosen. I believe this will elevate the appearance of the app, once it is Progressively Enhcanced (installable as a Progressive Web App).
+
+#### Colours
+
+The web app features 2 colour schemes (dark mode & light mode) based on the users OS / browser settings. The stylesheet contains the media query prefers-color-scheme: to determine the colour scheme displayed.
+
+Light mode colour pallette:
+![Colours](assets/docs/light.JPG)
+
+Dark mode colour pallette:
+![Colours](assets/docs/dark.JPG)
+
+#### Typography
+
+>The font used throughout the website is Atkinson Hyperlegible, with Sans-Serif used as a fallback. The font weight and font size css attributes are used with the font for emphasis and hierarchy. Atkinson Hyperlegible was chosen, as it focuses on letterform distinction to increase character recognition, ultimately improving readability. You can find out more [here](<https://www.brailleinstitute.net/freefont>)
+
+#### Images
+
+>The licence for the logo is available [here](assets/docs/logolicence.pdf). Vectors were selected from my Adobe Stock account to display on the events page if no data is available and on the reports page if no previous reports were made. The licences for both are available [here](assets/docs/vectorlicence.pdf).
+
+#### Icons
+
+[Icomoon](https://icomoon.io/) was used to create a custom icon set. Not only does this allow you to pick and choose icons from multiple icon packs, it dramatically reduces the overhead of using fontawesome.
+
+
 [Back to Top](<#table-of-contents>)
 
 ## Features
