@@ -1,0 +1,559 @@
+/* ---------- EVENTS ---------- */
+@media (prefers-color-scheme: light) {
+  details:nth-child(odd) i {
+    color: tomato;
+  }
+  details:nth-child(odd) {
+    background: linear-gradient(
+      90deg,
+      tomato 30%,
+      var(--background-secondary) 0%
+    );
+  }
+  details:nth-child(even) i {
+    color: mediumseagreen;
+  }
+  details:nth-child(even) {
+    background: linear-gradient(
+      90deg,
+      mediumseagreen 30%,
+      var(--background-secondary) 0%
+    );
+  }
+  details:nth-child(3n) i {
+    color: darkcyan;
+  }
+  details:nth-child(3n) {
+    background: linear-gradient(
+      90deg,
+      darkcyan 30%,
+      var(--background-secondary) 0%
+    );
+  }
+  details:nth-child(4n) i {
+    color: mediumorchid;
+  }
+  details:nth-child(4n) {
+    background: linear-gradient(
+      90deg,
+      mediumorchid 30%,
+      var(--background-secondary) 0%
+    );
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  details i {
+    color: var(--highlight);
+  }
+  details {
+    background: linear-gradient(
+      90deg,
+      var(--highlight) 30%,
+      var(--background-secondary) 0%
+    );
+  }
+}
+
+/* Acknowledgement - inspired by Bennett Feely https://codepen.io/bennettfeely/pen/Ftczh*/
+details {
+  flex: 0 1 300px;
+  width: 70%;
+  border: 1px solid var(--border);
+  box-shadow: var(--box-shadow);
+  margin: 0.5rem;
+  border-radius: 1rem;
+}
+
+details p {
+  padding: 1rem;
+  padding-left: 35%;
+}
+
+summary {
+  display: flex;
+}
+
+summary ol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+summary ol:nth-child(1) {
+  width: 30%;
+  align-items: center;
+  color: var(--background-primary);
+}
+
+summary > ol:nth-child(1) > li:nth-child(1) {
+  font-size: var(--font-large);
+}
+summary > ol:nth-child(1) > li:nth-child(2) {
+  font-size: var(--font-medium);
+}
+
+summary ol:nth-child(2) {
+  align-items: flex-start;
+  width: 70%;
+  padding: 1rem;
+}
+
+summary ol:nth-child(2) li:not(:last-child) {
+  margin: 0.5rem;
+  display: flex;
+}
+
+summary ol:nth-child(2) i {
+  margin-right: 0.5rem;
+}
+
+summary ol:nth-child(2) li:last-child {
+  align-self: flex-end;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--text-primary);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--circle-shadow);
+}
+
+summary ol:nth-child(2) li:last-child i {
+  margin: 0.175rem;
+  cursor: pointer;
+}
+
+/* ---------- FORMS ---------- */
+.feedbackForm {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  background-color: var(--background-secondary);
+  z-index: 2000;
+}
+
+form {
+  padding: 1rem;
+  width: 100%;
+}
+
+form ol,
+form ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+form ul li,
+form ol li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+form a {
+  color: var(--highlight);
+  cursor: pointer;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  height: 3rem;
+  margin: 0.25rem 0;
+  transition: 0.3s;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  background: var(--background-secondary) !important;
+  border: thin solid var(--border);
+  color: var(--text-secondary) !important;
+}
+
+textarea {
+  height: 5rem;
+}
+
+/* hidden input for custom styling */
+input[type="file"] {
+  opacity: 0;
+  z-index: -1;
+  position: relative;
+  width: 0%;
+  height: 0%;
+  padding: 0%;
+  margin: 0%;
+  line-height: 0%;
+  font-size: 0%;
+}
+
+input:hover,
+textarea:hover {
+  box-shadow: 0 0 0.25rem var(--highlight);
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 0.15rem var(--highlight);
+}
+
+button[type="submit"]:hover {
+  background-color: var(--background-secondary);
+  color: var(--highlight);
+  border: thin solid var(--highlight);
+}
+
+button[type="submit"],
+label.button {
+  color: var(--background-secondary);
+  background-color: var(--highlight);
+  border: thin solid var(--background-secondary);
+  padding: 1rem;
+  transition: 0.3s;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- CONTACT ---------- */
+.contactDetails {
+  padding: 0 2rem;
+}
+.contactDetails li {
+  margin: 1rem 0;
+}
+
+.contactDetails i {
+  margin-right: 1rem;
+  color: var(--highlight);
+}
+
+/* ---------- UNIQUE STYLES ---------- */
+/* Rating System inspired by Shadi Abu Hilal https://jsfiddle.net/shadiabuhilal/bhesp8hj/3/ */
+.rating {
+  width: 100%;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: left;
+  position: relative;
+}
+
+.rating > label {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  width: 1.1em;
+  cursor: pointer;
+  color: var(--text-highlight);
+  font-size: 2rem;
+}
+
+.rating > label:hover,
+.rating > label:hover ~ label,
+.rating > input.radio-btn:checked ~ label {
+  color: transparent;
+}
+
+.rating > label:hover:before,
+.rating > label:hover ~ label:before,
+.rating > input.radio-btn:checked ~ label:before {
+  position: absolute;
+  left: 0;
+  color: #ffd700;
+}
+
+.star > label:hover:before,
+.star > label:hover ~ label:before,
+.star > input.radio-btn:checked ~ label:before {
+  content: "\2605";
+}
+
+.emoji > label:hover:before,
+.emoji > label:hover ~ label:before,
+.emoji > input.radio-btn:checked ~ label:before {
+  content: "\263A";
+  top: 0;
+}
+
+.number > label:hover:before,
+.number > label:hover ~ label:before,
+.number > input.radio-btn:checked ~ label:before {
+  content: "	\002740";
+}
+
+/* ---------- REPORT ---------- */
+article {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 500px;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--background-secondary);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
+  margin: 2rem;
+  border-radius: 0.5rem;
+}
+
+#currentLocation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+article img,
+#currentLocation img {
+  display: flex;
+  max-width: 90%;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+}
+
+article ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 1rem;
+  width: 90%;
+}
+article li,
+article h3 {
+  margin: 0.5rem 0;
+}
+
+article i {
+  margin: 0 0.5rem;
+}
+
+/* Acknowledgement - inspired by kiran CodePen Home
+Simple css floating button https://codepen.io/kiraan/pen/RdxgBx */
+.float {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  bottom: 12vh;
+  right: 3vw;
+  background-color: var(--highlight);
+  color: var(--text-primary);
+  border-radius: 3rem;
+  text-align: center;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- CUSTOM ELEMENTS ---------- */
+
+#toast {
+  width: 50vw;
+  height: 5vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background: var(--background-primary);
+  border: 1px solid var(--highlight);
+  box-shadow: var(--box-shadow);
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  z-index: 1000;
+}
+
+#toast i {
+  margin-right: 1rem;
+  color: var(--highlight);
+}
+
+.spinner {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.5rem;
+  -webkit-animation: rotation 0.6s infinite linear;
+  -moz-animation: rotation 0.6s infinite linear;
+  -o-animation: rotation 0.6s infinite linear;
+  animation: rotation 0.6s infinite linear;
+  border-left: 0.188rem solid rgba(0, 174, 239, 0.15);
+  border-right: 0.188rem solid rgba(0, 174, 239, 0.15);
+  border-bottom: 0.188rem solid rgba(0, 174, 239, 0.15);
+  border-top: 0.188rem solid rgba(0, 174, 239, 0.8);
+  border-radius: 100%;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@-moz-keyframes rotation {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(359deg);
+  }
+}
+@-o-keyframes rotation {
+  from {
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(359deg);
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.swiper-slide {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Acknowledgement - The App Guruz - https://www.theappguruz.com/tag-tools/web/CSSAnimations/ */
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/* ---------- RESETS ---------- */
+.flexEnd {
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.hide {
+  display: none;
+}
+
+.clear {
+  float: none;
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+/* ---------- MEDIA QUERY ---------- */
+/* ---------- TABLET / DESKTOP ---------- */
+@media (min-width: 768px) {
+  .feedbackForm {
+    padding: 5vh 5vw;
+  }
+
+  form ol,
+  form ul {
+    width: 100%;
+  }
+
+  form ul li,
+  form ol li {
+    margin: 0.5rem 0;
+  }
+
+  input,
+  textarea {
+    height: 2rem;
+  }
+
+  input {
+    padding: 0.25rem;
+  }
+
+  button[type="submit"] {
+    width: 5rem;
+    padding: 0.5rem;
+  }
+
+  summary ol:nth-child(2) li:not(:last-child) {
+    margin: 0.25rem;
+  }
+
+  article {
+    flex-direction: row;
+  }
+
+  article img {
+    max-width: 40%;
+    margin: 1rem;
+  }
+
+  .box.swiperContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #currentLocation img,
+  .box.swiperContainer img {
+    width: 40%;
+  }
+
+  #toast {
+    width: 20vw;
+    height: 5vh;
+    position: fixed;
+  }
+}
