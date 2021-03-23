@@ -24,7 +24,7 @@ export function init() {
            <textarea  name="message" form="contactForm" id="message" required></textarea>
         </li>
         <li class="flexEnd">
-           <a id="openFeedbackModal">Would you like to leave feedback?</a>
+           <a id="openFeedbackModal" aria-describedby="new-window-message">Would you like to leave feedback?</a>
         </li>
         <li class="flexEnd">
            <button type="submit">SUBMIT</button>

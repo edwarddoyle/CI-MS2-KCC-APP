@@ -188,7 +188,7 @@ export async function init() {
 
   // CTA for display Report Form
   function displayNewReportCta() {
-    let ctaButton = `<a href="#" id="newReport" class="float">
+    let ctaButton = `<a href="#" id="newReport" class="float" aria-describedby="new-window-message">
       <i class="icon-flag"></i>
     </a>`;
     document

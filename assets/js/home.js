@@ -8,16 +8,16 @@ export function init() {
     <ol class="contactDetails slideInLeft">
        <li><img src="assets/images/kcc.svg" width="300" height="110" alt="Kilmacow Community Cleanup Logo"></li>
        <li><i class="icon-web"></i><a href="https://edwarddoyle.github.io/CI-MS1-KCC/index.html" target="_blank" rel="noopener" aria-describedby="new-window-message" aria-label="Website">KCC Website</a></li>
-       <li><i class="icon-location" aria-hidden="true"></i>Upper Kilmacow, Co.Kilkenny</li>
-       <li><i class="icon-call" aria-hidden="true"></i><a href="tel:00000000">+353 12 345 6789</a></li>
-       <li><i class="icon-mail" aria-hidden="true"></i><a href="mailto:contact@kcc.ie">contact@kcc.ie</a></li>
+       <li><i class="icon-location"></i>Upper Kilmacow, Co.Kilkenny</li>
+       <li><i class="icon-call"></i><a href="tel:00000000">+353 12 345 6789</a></li>
+       <li><i class="icon-mail"></i><a href="mailto:contact@kcc.ie">contact@kcc.ie</a></li>
        <li><a href="https://www.facebook.com" target="_blank" rel="noopener" aria-describedby="new-window-message" aria-label="Facebook">
-          <i class="icon-facebook" aria-hidden="true"></i></a>
+          <i class="icon-facebook"></i></a>
           <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-describedby="new-window-message" aria-label="Twitter">
-          <i class="icon-twitter" aria-hidden="true"></i>
+          <i class="icon-twitter"></i>
           </a>
           <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-describedby="new-window-message" aria-label="Instagram">
-          <i class="icon-instagram" aria-hidden="true"></i>
+          <i class="icon-instagram"></i>
           </a>
        </li>
     </ol>
@@ -38,7 +38,7 @@ export function init() {
     <p>So, feel free to navigate around, play with things, 
        try to break things and have a peak in our code cupboards. 
        If you landed here by accident, that’s cool too. If you would like 
-       to find out more information about the Kilmacow Community Clean Up Group, then please <a href="https://edwarddoyle.github.io/CI-MS1-KCC/index.html" target="_blank" rel="noopener" aria-describedby="new-window-message" aria-label="Website">click here, clickity click.</a>
+       to find out more information about the Kilmacow Community Clean Up Group, then please <a href="https://edwarddoyle.github.io/CI-MS1-KCC/index.html" target="_blank" rel="noopener" aria-describedby="new-window-message" aria-label="Website">click here.</a>
     </p>
  </div>`;
     document.querySelector("#home").insertAdjacentHTML("afterbegin", homeHTML);
