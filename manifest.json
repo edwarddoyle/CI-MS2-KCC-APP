@@ -1,0 +1,19 @@
+{
+	"name": "Kilmacow Community CLeanup Group",
+	"short_name": "KCC",
+    "icons": [
+    {
+      "src": "assets/images/google-touch-icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+	"start_url": "/index.html",
+	"scope": "/.",
+	"display": "standalone",
+	"background_color": "#fff",
+	"theme_color": "#f7f7f7",
+	"dir": "ltr",
+	"lang": "en-US",
+	"orientation": "portrait"
+}
