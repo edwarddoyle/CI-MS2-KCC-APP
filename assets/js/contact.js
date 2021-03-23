@@ -34,7 +34,7 @@ export function init() {
 </div>
 <div class="box">
   <ol class="contactDetails">
-     <li><img src="assets/images/kcc.svg" alt="Kilmacow Community Cleanup Logo"></li>
+     <li><img src="assets/images/kcc.svg" width="300" height="110" alt="Kilmacow Community Cleanup Logo"></li>
      <li><i class="icon-web"></i><a href="https://edwarddoyle.github.io/CI-MS1-KCC/index.html" target="_blank" rel="noopener" aria-describedby="new-window-message" aria-label="Website">KCC Website</a></li>
      <li><i class="icon-location" aria-hidden="true"></i>Upper Kilmacow, Co.Kilkenny</li>
      <li><i class="icon-call" aria-hidden="true"></i><a href="tel:00000000">+353 12 345 6789</a></li>
