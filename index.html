@@ -1,18 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Enter your description here"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
-<title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#ffffff">
+    <link onload="this.rel='stylesheet'" rel="preload" as="style" href="assets/css/appshell.css" media="all" />
+    <link rel="icon" href="assets/images/favicon.svg">
+    <link rel="mask-icon" href="assets/images/mask-icon.svg" color="#fff">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="preload" href="assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="assets/fonts/atkinson-hyperlegible-regular-102-webfont.woff2" as="font"
+        onload="this.onload=null;this.rel='font/woff2'" crossorigin>
+    <title>KCC App- 🌻Kilmacow Community Cleanup🌻</title>
 </head>
+
 <body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
+    <main>
+
+    </main>
+
+    <nav class="navi">
+        <ul>
+            <li data-target="home">
+                <i class="icon-home"></i>
+                <small>HOME</small>
+            </li>
+            <li data-target="reports">
+                <i class="icon-flag"></i>
+                <small>REPORT</small>
+            </li>
+            <li data-target="events">
+                <i class="icon-date"></i>
+                <small>EVENTS</small>
+            </li>
+            <li data-target="contact">
+                <i class="icon-call"></i>
+                <small>CONTACT</small>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="assets/js/app.js" type="module" async></script>
+    <script src="assets/js/smtp.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js" defer></script>
+
 </body>
+
 </html>
