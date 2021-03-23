@@ -10,7 +10,7 @@ Windows / Linux : &nbsp; ![ctrl](assets/docs/ctrl.png)  &nbsp; + &nbsp; 'click'
 
 >This application was undertaken as my submission for the Interactive Frontend Development Milestone Project (MS2).
 
-[viewport](assets/docs/viewport.JPG)
+![viewport](assets/docs/viewport.JPG)
 
 ## Table of Contents
 
