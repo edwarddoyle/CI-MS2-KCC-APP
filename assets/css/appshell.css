@@ -184,7 +184,7 @@ main {
 
 .box p {
   margin: 1rem;
-  text-align: justify;
+  text-align: left;
 }
 
 .navi,
@@ -258,7 +258,7 @@ main {
   height: 10vh;
   align-items: center;
   background: var(--highlight);
-  color: var(--text-highlight);
+  color: var(--background-primary);
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
