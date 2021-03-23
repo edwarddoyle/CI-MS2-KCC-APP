@@ -165,3 +165,130 @@ Dark mode colour pallette:
 >* [Testing](testing.md)
 
 [Back to Top](<#table-of-contents>)
+
+## Technologies
+
+### Languages & Frameworks
+
+* HTML5
+* CSS3
+* JavaScript
+
+### Fonts & Icons
+
+* [Atkinson Hyperlegible](https://www.brailleinstitute.net/freefont) - self hosted as no CDN avaialble at time of publishing
+* [IcoMoon](https://icomoon.io) - Self hosted fonts
+
+### Development, Version Control, Storage, Debbugging
+
+* [Gitpod IDE](https://www.gitpod.io) - IDE 
+* [Git](https://git-scm.com/) - version control system
+* [Github](https://github.com/) - repository storage
+* [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) - used for debugging code
+
+### Software & Applications
+
+* [Adobe Photoshop](https://www.adobe.com/ie/products/photoshop.html) - image resizing & editing
+* [Adobe Illustrator](https://www.adobe.com/ie/products/illustrator.html) - used for vector & svg editing
+* [Balsamiq Wireframes](https://balsamiq.com/wireframes/) - used for wireframing website
+* [Typora](https://typora.io/) - help with markdown writing & editing 
+* [Microsoft Word](https://www.microsoft.com/en-ie/microsoft-365/word) - content wrtiting
+
+### Resources
+
+* [Tiny PNG / JPG](https://tinyjpg.com/) - compressing images
+* [Am I Responsive](http://ami.responsivedesign.is/#) - viewport image for README
+* [CSS Matic](https://www.cssmatic.com/box-shadow) - css box shadow generator
+* [Coolors](https://coolors.co/) - colour pallette genarator, used in README surface section
+* [Gradient](https://cssgradient.io/) - gradient genarator
+* [JSONLint](https://jsonlint.com/) - JSON validator
+
+### Testing
+
+* [Validator](https://validator.w3.org/) - HTML code validator
+* [Jigsaw](https://jigsaw.w3.org/css-validator/) - CSS code validator
+* [GTmetrix](https://gtmetrix.com/) - Site performance testing
+* [WAVE](https://wave.webaim.org/) - Site accessibility testing
+* [Online Spell Check](https://www.online-spellcheck.com/) - README spell checker
+* [LambdaTest](https://www.lambdatest.com/) - cross browser testing
+
+[Back to Top](<#table-of-contents>)
+
+## Deployment
+
+### Creation
+
+The project was created using the Code Institute workspace template, available [here](https://github.com/Code-Institute-Org/gitpod-full-template).
+To use this template:
+
+1. Click use this template
+2. Name the new repository and select ‘Create repository from template’
+3. Navigate to the newly created repository and select Gitpod*
+4. The template workspace should now open in Gitpod
+
+>*The Gitpod browser extension must be installed for this option to become visible. Gitpod provide a browser extension for Chrome [here](https://chrome.google.com/webstore/detail/gitpod-dev-environments-i/dodmmooeoklaejobgleioelladacbeki) and for Firefox [here](https://addons.mozilla.org/en-US/firefox/addon/gitpod/)
+
+### Hosting
+
+This website is hosted on [Github Pages](https://pages.github.com/). To deploy the live site, I followed these steps:
+
+1. Navigate to the Github repository
+2. Click the ‘Settings’ tab
+3. In the Github pages section, select Master Branch as the source and click save.
+4. The site URL is now displayed*
+
+>*The site can take a period of time to go live
+
+### Local
+
+To run this project locally there are two options through Github (clone or download). To clone or download, navigate to the repository, click the Code button and select Clone or Download:
+
+1. Clone: This option provides you with a URL that can be used in your local IDE. Use the 'git clone' command followed by the provided URL to create a clone of the project locally.
+
+2. Download: This option provides a .zip file that can be downloaded, extracted and deployed to a local webserver or edited in your IDE.
+
+[Back to Top](<#table-of-contents>)
+
+## Credits
+
+### Content
+
+All text content was written by myself with approval from The Kilmacow Community Clean-up Group.
+
+### Image
+
+The licence for the logo is available [here](assets/docs/logolicence.pdf). The licence for the additional images are available [here](assets/docs/vectorlicence.pdf).
+
+### Code Snippets
+
+> CSS
+
+* [mouse0270 bootsnip](https://bootsnipp.com/snippets/kMRrW) - The layout of the 'event cards' was inspired by mouse0270, however the code was not responsive so I replicated similar cards using flexbox
+
+* [Ben Szabo 18/10/2017 CodePen](https://codepen.io/finnhvman/pen/jLXKJw) - android button ripple effect
+
+* [The App Guruz](https://www.theappguruz.com/tag-tools/web/CSSAnimations/) - slideInDown & slideInLeft animations
+
+* [Bennett Feely 25/05/2013 CoePen](https://codepen.io/bennettfeely/pen/Ftczh) - Inspiration for Google Now style cards. Code was re-written to suit
+
+* [Shadi Abu Hilal JSFiddle](https://jsfiddle.net/shadiabuhilal/bhesp8hj/3/) - inspiration for Feedback form - recoded to include additional icons
+
+* [kiraan 13/03/2019 CodePen](https://codepen.io/kiraan/pen/RdxgBx) - call to action button on Reports section
+
+> JS
+
+* [Chris Ferdinandi](https://github.com/cferdinandi/bin) - addToLocalStorageObject & getFromLocalStorageObject were inspired by Chris Ferdinandi localStorage and sessionStorage helper library. I am a huge fan of Chris.
+
+* [Pierre Smith 26/04/2017 CodePen](https://codepen.io/kipp0/pen/pPNrrj?editors=1010) - toast notification
+
+* [joshua.paling October 2019 Stack Overflow](https://stackoverflow.com/a/46639837/10741662) - base 64 encoding images
+
+> a11y
+* [Scott Vinkle 13/04/2018 Medium](https://medium.com/@svinkle/why-let-someone-know-when-a-link-opens-a-new-window-8699d20ed3b1) - a11y tips for screen readers
+
+### Acknowledgements
+
+> I would like to thank my mentor Rohit Sharma for their advice and guidance
+> I would also like to give a special mention to past pupils / current tutors for their invaluable knowledge and willingness to share it on slack and on the video conferences they hosted
+
+[Back to Top](<#table-of-contents>)
