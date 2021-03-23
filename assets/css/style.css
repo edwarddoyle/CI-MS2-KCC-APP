@@ -293,15 +293,15 @@ label.button {
 
 /* ---------- REPORT ---------- */
 article {
-  display: flex;
-  flex-direction: column;
-  flex: 0 1 500px;
-  align-items: center;
-  justify-content: space-between;
-  background: var(--background-secondary);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
-  margin: 2rem;
-  border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 300px;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--background-secondary);
+    box-shadow: 0 8px 16px rgb(0 0 0 / 45%);
+    margin: 2rem;
+    border-radius: 0.5rem;
 }
 
 #currentLocation {
