@@ -6,6 +6,7 @@ import {
   noData,
   handleFiles,
   filesToUpload,
+  addImagesToReport
 } from "./utils.js";
 
 // Form For Creating Report
@@ -161,22 +162,25 @@ export async function init() {
             <img src="${value.map}"/>
               <ul><h3>Report</h3>
                 <li><i class="icon-date"></i>${value.date}</li>
-                <li><i class="icon-info"></i>${value.desc}</li>       
+                <li><i class="icon-info"></i>${value.desc}</li>
+                <li class="slideHolder">
+                  <div id="slide${key}" class="swiper-container">
+                  <div class="swiper-wrapper"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  </div>
+                </li>       
               </ul>
           </article>`;
           document
             .querySelector("#reports")
             .insertAdjacentHTML("afterbegin", html);
-          //if (value.images){
-          // value.images.forEach((img) => {
-          //   add to slider Js
-          // });
-          // <li>${value.lat}, ${value.lon}</li>
-
-          // data.images.forEach(image => {
-          //   let projectImageCarousel = `<div class="swiper-slide"><img src="${image}" alt="${data.projectDescription}" loading="lazy"></div>`;
-          //   swiper.appendSlide([projectImageCarousel]);
-          // });
+            if (value.images){
+              let imageSlider = document.querySelector(`#slide${key}`);
+              value.images.forEach((img) => {
+                addImagesToReport(img, imageSlider);
+             })
+            }
         }
       } catch (err) {
         console.log(err);

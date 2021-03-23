@@ -95,6 +95,12 @@ export function addToFilestoSwiper(file, i) {
   swiper.appendSlide([uploadImageSwiper]);
 }
 
+export function addImagesToReport(img, container){
+  let slideImg = `<div class="swiper-slide"><img src="${img}" width="150px"></div>`; 
+  let reportSwiper = new Swiper(container, swiperOptions);
+  reportSwiper.appendSlide([slideImg]); 
+}
+
 export const filesToUpload = [];
 export function handleFiles(files) {
   const set = new Set([...files]);

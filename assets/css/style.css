@@ -317,6 +317,8 @@ article img,
   max-width: 90%;
   margin: 1rem 0;
   border-radius: 0.5rem;
+  align-self: center;
+  justify-self: center;
 }
 
 article ul {
@@ -335,7 +337,15 @@ article i {
   margin: 0 0.5rem;
 }
 
-/* Acknowledgement - inspired by kiran CodePen Home
+.slideHolder {
+  max-width: 300px;
+  display: flex;
+  align-self: center;
+  align-items: stretch;
+  justify-content: center;
+}
+
+/* Acknowledgement - inspired by kiran CodePen 
 Simple css floating button https://codepen.io/kiraan/pen/RdxgBx */
 .float {
   position: fixed;
