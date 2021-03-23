@@ -10,7 +10,7 @@ Windows / Linux : &nbsp; ![ctrl](assets/docs/ctrl.png)  &nbsp; + &nbsp; 'click'
 
 >This application was undertaken as my submission for the Interactive Frontend Development Milestone Project (MS2).
 
-[viewport](assets/docs/viewport.jpg)
+[viewport](assets/docs/viewport.JPG)
 
 ## Table of Contents
 
@@ -156,6 +156,68 @@ Dark mode colour pallette:
 [Back to Top](<#table-of-contents>)
 
 ## Features
+
+### Overview
+
+* Responsive Single Page Application built with HTML, CSS and JavaScript
+* Fixed navigation bar for easy navigation as per client’s request
+* Expandable and collapsible event cards
+* Feedback form with rating system as per client’s request
+* Contact form
+* Report form with image capture / upload and geolocation information 
+
+#### Navbar
+
+>* The navbar should be easily accessible and fixed to the top of the browser across all webpage sections on desktop and fixed to the bottom of the browser across all webpage sections on mobile
+>* The menu items should change size and colour when hovered over on devices with a mouse
+>* The menu links should display the relevant section when clicked
+
+#### Home Section
+
+>* The home section should display upon visiting the app. It should also be accessible by clicking the home button on the navbar 
+>* A slide down greeting message should appear. This should contain a personalised greeting after the user uses one of the contact forms – their name is stored in local storage.
+>* The greeting should be relevant to the time of day – ie. Good Evening user name, Good Morning user name
+>* The home section text should be legible across all browser sizes
+>* Contact details should navigate to the correct pages and where applicable, open links in new tabs / applications
+
+#### Reports Section
+
+>* The first time a user visits the reports section should show the user there is no previous reports
+>* The report pop-up form should display once the cta button is clicked
+>* The user should be requested location permissions by the browser
+>* The New Report form should display the users current position
+>* Upon clicking the image upload button, the user should be asked to upload images or capture from their device’s camera
+>* Upon selecting / capturing images – these images should be displayed back to the user
+>* On submission of the report form, the pop up should close.
+>* On the second visit to the page, the users previous reports should be displayed
+>* The report cards should contain the location and time of the report
+
+#### Events Section
+
+>* The Events section is accessed by clicking the relevant link on the navbar 
+>* This section contains event cards. The event cards should wrap underneath each other on mobile devices.
+>* If no events are available to show, a notification image should appear
+>* The event cards should expand and collapse when clicked
+
+#### Contact Section
+
+>* The Contact section is accessed by clicking the relevant link on the navbar 
+>* The Contact sections has two subsections.
+>* The first section should display contact information for the KCC including website address, postal address, email address, phone number and social media links. These links should navigate to the correct pages and where applicable, open links in new tabs / applications
+>* The second section contains a contact form where visitors can contact the KCC.
+>* The form contains name and email inputs that are required, a text area for general comments or messages.
+>* The submit button should indicate ‘a state of loading’ once clicked, provided all form validations pass
+>* The contact form also contains a link to a pop-up feedback form. This allows users to provide feedback n the app whilst it’s in the testing stage.
+>* The feedback ratings should change when clicked
+
+### Features to implement
+
+* Service worker to be added to the application, this will allow the app to be installed on the user’s device. (beforeInstallEvent) - capture & update the user interface with a customised button for installing the PWA
+* The Service worker will also expose the cacheApi - precache the app shell for fast page speeds and 'offline' functionality
+* backgroundSyncApi - allow the users to post reports even when offline - the background sync api can store the data locally, posting to the api endpoint when the device regains network connection. It is proposed that workbox be used for this. 
+* Home section to ‘act’ like a news feed.
+* Add to calendar button on events cards
+* Cookie notification pop up and privacy policy
 
 [Back to Top](<#table-of-contents>)
 
