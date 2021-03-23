@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Daffodil Planting",
+    "day": "21",
+    "month": "Nov",
+    "location": "Church Gates",
+    "time": "TBC",
+    "info": "All Welcome",
+    "description": "Our Annual daffodil planting event. More details to follow"
+  },
+  {
+    "name": "River Clean",
+    "day": "19",
+    "month": "Sep",
+    "location": "The Pond",
+    "time": "TBC",
+    "info": "Adults Only",
+    "description": "The Bi-Annual river clean is scheduled for September 18th. This is an Adults Only Event. More details to follow"
+  },
+  {
+    "name": "Summer Bulb Planting",
+    "day": "18",
+    "month": "Jul",
+    "location": "Sports Complex",
+    "time": "12:00pm",
+    "info": "All Welcome",
+    "description": "The Summer Bulb planting will focus on the roads between the Lower Village & Upper Village"
+  },
+  {
+    "name": "Annual Spring Clean",
+    "day": "18",
+    "month": "Apr",
+    "location": "Sports Complex",
+    "time": "12:00pm",
+    "info": "All Welcome",
+    "description": "All Covid 19 safety measures will be adhered to"
+  }
+]

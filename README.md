@@ -118,9 +118,9 @@ The application aims to look and feel like a native application. The app is desi
 #### Wireframes
 [Balsamiq Wireframes](https://balsamiq.com/wireframes/) was used to wireframe the website.
 
->* [Home Section](assets/docs/home.pdf)
->* [Report Section](assets/docs/about.pdf)
->* [Events Section](assets/docs/events.pdf)
->* [Contact Section](assets/docs/contact.pdf)
+>* [Home Section](assets/docs/Home.pdf)
+>* [Report Section](assets/docs/Reports.pdf)
+>* [Events Section](assets/docs/Events.pdf)
+>* [Contact Section](assets/docs/Contact.pdf)
 
 [Back to Top](<#table-of-contents>)
