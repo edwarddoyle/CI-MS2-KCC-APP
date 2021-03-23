@@ -1,6 +1,6 @@
 # ![logo](assets/docs/logo.png) Kilmacow Community Clean-up
 
-<!-- [View the live project here.](https://edwarddoyle.github.io/CI-MS1-KCC/) -->
+[View the live project here.](https://edwarddoyle.github.io/CI-MS2-KCC-APP/)
 
 To open links in a new tab:
 
@@ -10,7 +10,7 @@ Windows / Linux : &nbsp; ![ctrl](assets/docs/ctrl.png)  &nbsp; + &nbsp; 'click'
 
 >This application was undertaken as my submission for the Interactive Frontend Development Milestone Project (MS2).
 
-<!-- ![viewport](assets/docs/viewport.jpg) -->
+[viewport](assets/docs/viewport.jpg)
 
 ## Table of Contents
 
