@@ -395,25 +395,6 @@ Simple css floating button https://codepen.io/kiraan/pen/RdxgBx */
     z-index: 1000;
 }
 
-/* #toast {
-  width: 50vw;
-  height: 5vh;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  background: var(--background-primary);
-  border: 1px solid var(--highlight);
-  box-shadow: var(--box-shadow);
-  margin: 0.5rem;
-  border-radius: 0.5rem;
-  z-index: 1000;
-}
-
-#toast i {
-  margin-right: 1rem;
-  color: var(--highlight);
-} */
-
 .spinner {
   display: flex;
   align-self: center;
@@ -595,9 +576,4 @@ a {
     width: 20%;
   }
 
-  /* #toast {
-    width: 20vw;
-    height: 5vh;
-    position: fixed;
-  } */
 }
