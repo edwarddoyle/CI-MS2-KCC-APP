@@ -567,6 +567,10 @@ a {
     justify-content: center;
   }
 
+  .slideHolder {
+    height: 150px;
+  }
+
   #currentLocation img,
   .box.swiperContainer img {
     width: 40%;
