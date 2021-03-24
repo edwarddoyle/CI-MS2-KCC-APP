@@ -365,7 +365,37 @@ Simple css floating button https://codepen.io/kiraan/pen/RdxgBx */
 
 /* ---------- CUSTOM ELEMENTS ---------- */
 
-#toast {
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 500ms;
+  z-index: 200;
+}
+
+.popup {
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 1rem;
+    border-radius: .2rem;
+    border: 1px solid var(--highlight);
+    width: 50%;
+    height: 3rem;
+    position: fixed;
+    transition: all 5s ease-in-out;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    z-index: 1000;
+}
+
+/* #toast {
   width: 50vw;
   height: 5vh;
   align-items: center;
@@ -382,7 +412,7 @@ Simple css floating button https://codepen.io/kiraan/pen/RdxgBx */
 #toast i {
   margin-right: 1rem;
   color: var(--highlight);
-}
+} */
 
 .spinner {
   display: flex;
@@ -561,9 +591,13 @@ a {
     width: 40%;
   }
 
-  #toast {
+  .popup {
+    width: 20%;
+  }
+
+  /* #toast {
     width: 20vw;
     height: 5vh;
     position: fixed;
-  }
+  } */
 }

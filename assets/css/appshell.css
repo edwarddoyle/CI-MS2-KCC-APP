@@ -46,7 +46,14 @@ i {
   text-transform: none;
   line-height: 1;
 }
-
+.icon-close:before {
+  content: "\e90f";
+  color: #ff0f0f;
+}
+.icon-check:before {
+  content: "\e90e";
+  color: #4BB543;
+}
 .icon-facebook:before {
   content: "\e90d";
   color: #0071eb;
@@ -193,6 +200,7 @@ main {
 }
 
 .navi {
+  z-index: 11;
   width: 100vw;
   position: fixed;
   margin-bottom: 0;

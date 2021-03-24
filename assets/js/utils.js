@@ -34,13 +34,24 @@ export function hideLoadingButton(el) {
 }
 
 //https://codepen.io/kipp0/pen/pPNrrj?editors=1010
+// export function showToast(status, message) {
+//   let icon = status === "success" ? `fas fa-search` : `fas fa-search`;
+//   let toast = `<div id="toast"><i class="${icon}"></i>${message}</div>`;
+//   currentView.firstChild.insertAdjacentHTML("afterbegin", toast);
+//   let toastID = document.getElementById("toast");
+//   setTimeout(() => toastID.parentNode.removeChild(toastID), 3000);
+// }
 export function showToast(status, message) {
-  let icon = status === "success" ? `fas fa-search` : `fas fa-search`;
-  let toast = `<div id="toast"><i class="${icon}"></i>${message}</div>`;
-  currentView.firstChild.insertAdjacentHTML("afterbegin", toast);
+  let icon = status === "success" ? `icon-check` : `icon-close`;
+  let toast = `<div id="toast" class="overlay"><div class="popup">
+    <i class="${icon}"></i>${message}
+  </div></div>`;
+  currentView.insertAdjacentHTML("afterbegin", toast);
   let toastID = document.getElementById("toast");
-  setTimeout(() => toastID.parentNode.removeChild(toastID), 3000);
+  setTimeout(() => toastID.parentNode.removeChild(toastID), 2000);
 }
+
+
 
 export function rememberNewVisitor(name) {
   let returnVisitor = getFromLocalStorageObject("appSettings", "returnVisitor");
