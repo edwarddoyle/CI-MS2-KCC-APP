@@ -57,9 +57,6 @@ export function init() {
   document
     .querySelector("#contact")
     .insertAdjacentHTML("afterbegin", contactFormHTML);
-  let SERVICE_ID = "service_xka86ic";
-  let USER_ID = "user_qqFSAsktrburZ7cN3Riim";
-  let TEMPLATE_ID = "template_1enm4oj";
 
   let contactForm = document.querySelector("#contactForm");
   contactForm.addEventListener("submit", (e) => {
@@ -72,21 +69,27 @@ export function init() {
 
     let submitButton = document.querySelector("button");
     showLoadingButton(submitButton);
+        let emailBody = [];
+    // Loop over form to get values
+    [...contactForm.elements].forEach((el) => {
+        let name = String(el.name);
+        let value = el.value.trim();
+        emailBody = [...emailBody, { name: name, data: value }];        
+    });
 
-    (function () {
-      emailjs.init(USER_ID);
-    })();
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, contactForm).then(
-      function (response) {
-        contactForm.reset();
-        hideLoadingButton(submitButton);
-        showToast("success", "Message Sent");
-      },
-      function (error) {
-        hideLoadingButton(submitButton);
-        showToast("error", "Message Not Sent");
-      }
-    );
+    Email.send({
+      SecureToken: "dd05546f-ea67-4f1a-8825-4d3c9ba272e9",
+      To: "edwardpaul.doyle@gmail.com",
+      From: "edwardpaul.doyle@gmail.com",
+      Subject: "New KCC Message",
+      Body: emailBody,
+    }).then(resetForm());
+
+    function resetForm() {
+      hideLoadingButton(submitButton);
+      contactForm.reset();
+      showToast("success", "Message Sent");
+     }
   });
 
   let feedbackButton = document.querySelector("#openFeedbackModal");
@@ -154,18 +157,31 @@ export function init() {
     feedbackFormSubmit.addEventListener("click", (e) => {
       e.preventDefault();
       let feedbackForm = document.getElementById("feedbackForm");
-      (function () {
-        emailjs.init(USER_ID);
-      })();
-      emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, feedbackForm).then(
-        function (response) {
-          feedbackButton.textContent = "Thank you for your feedback";
-          feedbackForm.parentNode.removeChild(feedbackForm);
-        },
-        function (error) {
-          feedbackButton.textContent = "Error sending Feeback";
-        }
-      );
+
+    let emailBody = [];
+    [...feedbackForm.elements].forEach((el) => {
+      if (el.type === "radio" && !el.checked) {
+          return
+        }        
+          let name = String(el.name);
+          let value = el.value.trim();
+          emailBody = [...emailBody, { name: name, data: value }];    
+      });
+  
+      Email.send({
+        SecureToken: "dd05546f-ea67-4f1a-8825-4d3c9ba272e9",
+        To: "edwardpaul.doyle@gmail.com",
+        From: "edwardpaul.doyle@gmail.com",
+        Subject: "New KCC Feedback",
+        Body: emailBody,
+      }).then(resetForm());
+  
+      function resetForm() {
+        hideLoadingButton(feedbackFormSubmit);
+        showToast("success", "Message Sent");
+        feedbackButton.textContent = "Thank you for your feedback";
+        feedbackForm.parentNode.removeChild(feedbackForm);
+       }
     });
   });
 }
